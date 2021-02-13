@@ -105,7 +105,7 @@ app.post("/delete", function(req, res){
     }
 });
 
-app.get("/list/:customListName", function(req, res){
+app.get("/:customListName", function(req, res){
     const customListName = _.capitalize(req.params.customListName);
 
     
